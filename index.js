@@ -45,7 +45,9 @@ var name_of_the_user = document.getElementById("name");
 
 email.addEventListener("input", () => Check_the_email(email));
 dob.addEventListener("input", () => Check_the_dob(dob));
-name_of_the_user.addEventListener("input", => Check_the_name(name_of_the_user));
+name_of_the_user.addEventListener("input", => 
+    Check_the_name(name_of_the_user)
+);
 tick.addEventListener("input", => Check_the_tick(tick));
 
 var get_form = document.getElementById("user-form");
@@ -63,14 +65,14 @@ enter_to_the_table = () => {
 };
 user_entries = enter_to_the_table();
 
-create_list_of_object = () =>{
+create_list_of_object = () => {
     var check = true;
     if (!tick.checked) {
         check = false;
     }
     var object_list = {
         dob: dob.value,
-        password: password.vallue,
+        password: password.value,
         email: email.value,
         checked: check,
         name: name_of_the_user.value,

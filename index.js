@@ -9,7 +9,7 @@ function Check_the_dob(dob) {
 }
 
 function Check_the_email(email) {
-    if(email.value.include("@") && email.value.include(",")) {
+    if(email.value.include("@") && email.value.includes(".")) {
         email.setCustomValidity("");
     } else {
         email.setCustomValidity("Inavalid Email!");
@@ -45,10 +45,10 @@ var name_of_the_user = document.getElementById("name");
 
 email.addEventListener("input", () => Check_the_email(email));
 dob.addEventListener("input", () => Check_the_dob(dob));
-name_of_the_user.addEventListener("input", => 
+name_of_the_user.addEventListener("input", () => 
     Check_the_name(name_of_the_user)
 );
-tick.addEventListener("input", => Check_the_tick(tick));
+tick.addEventListener("input", () => Check_the_tick(tick));
 
 var get_form = document.getElementById("user-form");
 
@@ -108,12 +108,12 @@ get_form.addEventListener("submit", (e) => {
     if (agree_the_condition) {
         var object_list = create_list_of_object();
         user_entries.push(object_list);
-        localStorage.setItem("user_entries", JSON.stringify(user_entries));
+        localStorage.setItem("user_entries",JSON.stringify(user_entries));
     }
     show_the_table();
 });
 
 window.onload = (event) => {
     show_the_table();
-}
+};
 

@@ -33,7 +33,7 @@
 .sub-container{
     margin-top: 25px;
 }
-submit{
+#submit{
     background-color: #22BC53;
     color: white;
 }
@@ -99,13 +99,13 @@ tr{
 }
 td{
     border: rgba(0,0,0,0.3) 1px solid;
-    padding:0px 10px 0px 01px;
+    padding:0px 10px 0px 10px;
 }
 th{
     margin-bottom: 2px;
 }
 #entries-heading{
-    text-emphasis: center;
+    text-align: center;
     font-weight: bold;
     font-size: 20px;
     margin-top: 25px;
